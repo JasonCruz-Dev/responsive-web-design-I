@@ -1,3 +1,347 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+/*THIS CODE WAS EDITED & WRITTEN ON 9/12/19, BY JASON CRUZ HERE I WAS LEARNING ABOUT BOX-MODELS AS I GO. I HAVE ADDED NOTES TO HELP ME REMEMBER AS I GO AND NOT GET LOST IF I COME BACK TO IT LATER.
+*/
+
+/*===== Navbar Section ======*/
+
+@media (max-width: 800px) {
+    body {
+        width: 40%
+    }
+  
+    a.nav {
+        margin-left: 4%;
+        font-size: 15px;
+    }
+
+    .top-logo {
+        margin-top: 50px;
+        margin: auto;
+        width: 150px;
+    }
 
 
+
+
+
+ }
+
+
+.navbar {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	/* margin-left: 14.6%;
+	margin-top: 3%;
+	width: 42% */
+}
+
+.navbar a {
+	/* margin-left: 2%; */
+	font-weight: bold;
+}
+
+.navbar .nav {
+	display: inline-flex;
+    /* position: relative;
+	font-size: 18px; */
+	margin-top: 2%;
+	margin-left: 4%;
+	top: 20px;
+    color: rgb(58, 58, 58);
+    text-decoration: none;
+
+}
+
+.top-logo {
+	position: absolute;
+	margin-left: 8%;
+    top: 6.5%;
+}
+/*=============================*/
+
+
+
+/*===== Logo Under Navbar =====*/
+
+/*THIS IS THE LOGO UNDER THE NAVBAR*/
+.services-header-img {
+    width: 62.1%;
+	margin-top: 4%;
+    margin-left: 16%;
+	display: inline-block;
+    height: 20%;
+}
+
+/*================================*/
+
+/*==== Services Page Content ==== */
+.services-top {
+    width: 62.2%;
+    margin-left: 16%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.services-top h1 {
+    font-size: 25px;
+}
+
+.services-top p {
+    text-align: justify;
+}
+
+.top-border .section-border {
+    border-bottom: 1px solid black;
+    margin-top: 2%;
+    margin-left: 16%;
+    margin-right: 21.9%;
+}
+/*=================================*/
+
+/*===== Middle section Flexbox =====*/
+.middle-section-flexbox {
+    /* width: 62.1%; */
+    display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-left: 16%;
+	margin-bottom: 5%;
+    height: 110%;
+	width: 62.1%;
+}
+
+.middle-section-flexbox .content-box {
+	padding: 20px;
+    margin-top: 4%;
+    border: 1px solid black;
+	width: 48%;
+	height: 30%;
+	background-color: lightgrey;
+}
+
+.middle-section-flexbox .content-box h1, p, a {
+	text-align: justify;
+}
+
+.bottom-border .section-border {
+    border-bottom: 2px solid black;
+    margin-top: 3%;
+    margin-left: 16%;
+    margin-right: 21.9%;
+}
+/*==================================*/
+
+/*========= Bottom Section Content for Services Page=========*/
+
+.facts-section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+    width: 62.1%;
+    height: 70%;
+    margin-left: 16%;
+    /* height: 20%; */
+}
+
+.bottom-content {
+	margin-top: 4%;
+	width: 48%;
+}
+
+.bottom-content ul li{
+	list-style-type: square;
+	margin-top: 5%;
+	margin-left: 5%;
+}
+
+.bottom-content .services-info-img {
+	width: 402px;
+}
+
+/*THIS IS THE INNOVATION ON DEMAND SECTION*/
+.top-section {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+    height: 60%;
+    width: 100%;
+	margin-left: 20%;
+	margin-bottom: 8%;
+}
+
+.top-section h1 {
+    position: absolute;
+    display: inline-block;
+	font-size: 60px;
+    margin-top: 10%;
+	margin-bottom: 1px;
+    margin-left: 1%;
+	text-align: center;
+}
+
+/*THIS IS THE INNOVATION ON DEMAND "GET STARTED" BUTTON SECTION */
+.top-section a {
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    color: black;
+    padding: 5px 40px 5px 40px;
+    margin-top: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    border: 1px solid black;
+ }
+
+/*THIS PICTURE IS THE CIRCLE NEXT TO THE INNOVATION ON DEMAND LINE*/
+.top-section .second-img {
+    display: inline-block;
+    position: relative;
+    height: 300px;
+    margin-left: 36.1%;
+    margin-bottom: 0;
+    margin-top: 6%;
+}
+
+/* THIS BORDER IS RIGHT ABOVE THE FEATURES AND ABOUT SECTION*/
+
+.top-content div features {
+    display: inline-block;
+    /*position: relative;*/
+    margin-left: 40px;
+}
+
+/*THIS IS THE FEATURES, ABOVE SECTION*/
+.third-section-box {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-left: 16%;
+	margin-right: 21%;
+}
+
+.third-section {
+    width: 48%;
+    height: 50%;
+	text-align: justify;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+/*THIS IS THE MIDDLE IMAGE SECTION*/
+
+.middle-image img{
+    width: 850px;
+    height: 175px;
+    margin-left: 216px;
+
+}
+
+/*THIS IS THE BOTTOM SERVICES, PRODUCT & VISION SECTION*/
+.index-bottom-content {
+	display: inline-flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	margin-left: 16%;
+	margin-right: 20.9%;
+}
+
+.index-bottom {
+	width: 30%;
+    text-align: justify;
+    margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+/*BOTTOM BORDER TOP ABOVE FOOTER*/
+div .border {
+    border-bottom: 1px solid black;
+    margin-left: 16%;
+    margin-right: 21%;
+}
+
+/*CONTACT SECTION*/
+.contact {
+    display: inline-block;
+    width: 20%;
+    margin-top: 25px;
+    margin-bottom: 5%;
+    margin-left: 16%;;
+}
+
+.contact p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+footer p{
+    margin: 10px;
+    text-align: center;
+}
+
+ 
