@@ -54,6 +54,7 @@ table {
 
 html, body {
     height: 100%;
+    line-height: 1;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -76,10 +77,17 @@ h1, h2, h3, h4, h5 {
 	margin: 0px auto;
  }
 
+ .nav-content {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-top: 30px;
+ }
+
 .navbar {
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 30px;
 }
 
@@ -92,20 +100,12 @@ nav {
 .nav-button {
 	text-decoration: none; 
     color: grey;
+    transition: transform 0.4;
 }
 
 .nav-button:hover {
 	transform: scale(1.2);
 }
-
-.top-logo {
-	/* position: absolute; */
-	/* margin-left: 8%;
-    top: 6.5%; */
-}
-/*=============================*/
-
-
 
 /*===== Logo Under Navbar =====*/
 
@@ -148,3 +148,130 @@ nav {
     color: black;
 }
 
+.top-content {
+    display: flex;
+    border-top: 1px solid black;
+    padding-top: 35px;
+}
+
+.middle-img {
+    padding-top: 32px;
+    padding-bottom: 26px;
+}
+
+.bottom-content {
+    display: flex;
+    border-bottom: 1px solid black;
+    padding-bottom: 38px;
+}
+
+.bottom-content div { 
+    width: 31.2%;
+}
+
+.services, .product {
+    margin-right: 20px;
+}
+
+.contact {
+    margin-top: 33px;
+}
+
+.contact p {
+    margin-bottom: 12px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 28px;
+    margin-bottom: 40px;
+    font-size: 16px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        width: 760px;
+        margin-left: 20px;
+    }
+
+    .second-img {
+        display: none;
+    }
+
+    .nav-content {
+        flex-direction: column;
+    }
+
+    .top-logo {
+        margin-bottom: 36px;
+    }
+
+    nav {
+        width: 100%;
+        order: 1;
+        padding-right: 41px;
+        padding-left: 9px;
+    }
+
+    .ts {
+        justify-content: center;
+        margin-top: 74px;
+        margin-bottom: 84px;
+        padding-left: 0;
+    }
+
+    .innovation {
+        margin-bottom: 32px;
+    }
+
+    .top-content {
+        padding-left: 10px;
+    }
+
+    .features, .about {
+        width: 48%;
+    }
+
+    .features {
+        margin-right: 20px;
+    }
+
+    .top-content {
+        display: flex;
+        padding-top: 35px;
+    }
+
+    .middle-img {
+        width: 100%;
+        padding-bottom: 28px;
+    }
+
+    .bottom-content {
+        display: flex;
+        padding-left: 10px;
+        padding-bottom: 36px;
+    }
+
+    .bottom-content div {
+        width: 28.5%;
+    }
+
+    .services, .product {
+        margin-right: 39px;
+    }
+
+    .contact {
+        margin-top: 35px;
+        padding-left: 10px;
+    }
+
+    .contact p {
+        margin-bottom: 16px;
+    }
+}
